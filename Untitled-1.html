@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gramado - A Cidade dos Sonhos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    header {
+      background: linear-gradient(135deg, #654ea3, #eaafc8);
+      color: white;
+      padding: 3rem 1rem 3rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    header p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1100px;
+      margin: 3rem auto 3rem;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #654ea3;
+      padding-bottom: 0.3rem;
+      font-size: 2rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .text-block {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .image-caption {
+      font-size: 0.85rem;
+      text-align: center;
+      color: #999;
+      margin-top: 0.4rem;
+    }
+
+    /* Responsive spacing adjustment */
+    @media (max-width: 720px) {
+      header {
+        padding-bottom: 3rem;
+      }
+      main {
+        margin-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gramado</h1>
+    <p>A Cidade dos Sonhos na Serra Gaúcha</p>    
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Sobre Gramado</h2>
+      <div class="content-grid">
+        <div class="text-block">
+          <p>
+            Gramado é uma charmosa cidade localizada na Serra Gaúcha, Rio Grande do Sul, Brasil. Conhecida por sua arquitetura europeia, gastronomia requintada e clima acolhedor, Gramado é um dos destinos turísticos mais famosos do Brasil, especialmente durante o inverno.
+          </p>
+          <p>
+            Fundada oficialmente em 1875, a cidade desenvolveu-se devido à colonização alemã e italiana, resultando numa rica mistura cultural que pode ser apreciada em suas festas típicas e culinária.
+          </p>
+        </div>
+        <img
+          src="https://jornaldigitalcanela.com.br/wp-content/uploads/2020/02/Prefeitura-de-Gramado.jpg"
+          alt="Prefeitura de Gramado"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section id="climate">
+      <h2>Clima</h2>
+      <div class="content-grid">
+        <img
+          src="https://guiaviajarmelhor.com.br/wp-content/uploads/2019/07/neve-em-gramado-1024x536.png"
+          alt="Neve em Gramado"
+          loading="lazy"
+        />
+        <div class="text-block">
+          <p>
+            Gramado possui um clima subtropical de altitude, caracterizado por verões amenos e invernos frios. Durante o inverno, é comum a ocorrência de geada e até neve, o que atrai muitos turistas à busca de experiências de clima europeu no Brasil.
+          </p>
+          <p>
+            A temperatura média anual gira em torno de 16°C, com máximas que podem superar 30°C no verão e mínimas negativas no inverno.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="attractions">
+      <h2>Atrações</h2>
+      <div class="content-grid">
+        <div>
+          <img
+            src="https://riograndedosulturismo.com.br/wp-content/uploads/2023/02/Lago_Negro_-_Gramado_-_panoramio_10-scaled.jpg"
+            alt="Lago Negro"
+            loading="lazy"
+          />
+          <p class="image-caption">Lago Negro - Lugar para passeios e pedalinho</p>
+        </div>
+        <div>
+          <img
+           src="https://th.bing.com/th/id/R.4c881c51685c56109c9520678b90febe?rik=fW7bSASZwKWCYg&pid=ImgRaw&r=0"
+            alt="Fábrica de Chocolate"
+            loading="lazy"
+          />
+          <p class="image-caption">Fábricas de Chocolate e degustações</p>
+        </div>
+        <div>
+          <img
+            src="https://th.bing.com/th/id/OIP.QcB-MXk01mi1K10tC3B-NwHaE8?r=0&rs=1&pid=ImgDetMain"
+            alt="Mini Mundo"
+            loading="lazy"
+          />
+          <p class="image-caption">Mini Mundo - Miniaturas que encantam</p>
+        </div>
+      </div>
+      <div class="text-block" style="margin-top:1rem;">
+        <p>
+          Dentre as principais atrações de Gramado estão o Lago Negro, o Mini Mundo, o Snowland (parque de neve indoor) e diversas fábricas de chocolate artesanal que podem ser visitadas para degustação e compra.
+        </p>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Eventos</h2>
+      <div class="content-grid">
+        <div>
+          <img
+            src="https://malaprontagramado.com.br/wp-content/uploads/2020/11/atracoes-do-natal-luz-em-gramado.jpg"
+            alt="Natal Luz"
+            loading="lazy"
+          />
+          <p class="image-caption">Natal Luz - Maior evento de Natal da América Latina</p>
+        </div>
+        <div>
+          <img
+            src="https://th.bing.com/th/id/R.9e1be95d4dea911392952af42c0f480d?rik=KwuhO0wQiffd0A&riu=http%3a%2f%2fwww.guiaviagensbrasil.com%2fimagens%2ftapete-vermelho-festival-cinema-gramado-rs.jpg&ehk=Eh4nTnMV4tQfWAKaV8kdzyBTErSFRPwh1LafrrmYh60%3d&risl=&pid=ImgRaw&r=0"
+            alt="Festival de Cinema"
+            loading="lazy"
+          />
+          <p class="image-caption">Festival de Cinema de Gramado</p>
+        </div>
+      </div>
+      <div class="text-block" style="margin-top:1rem;">
+        <p>
+          Gramado abriga eventos culturais de grande porte como o famoso Natal Luz, que dura cerca de dois meses e é mundialmente conhecido, além do tradicional Festival de Cinema de Gramado, atraindo artistas e turistas do mundo todo.
+        </p>
+      </div>
+    </section>
+
+    <section id="history">
+      <h2>História</h2>
+      <div class="content-grid">
+        <div class="text-block">
+          <p>
+            Colonizada inicialmente por imigrantes alemães e italianos no século XIX, Gramado preserva até hoje suas tradições culturais e arquitetônicas europeias. Durante o desenvolvimento da cidade, a agricultura e a política local foram fundamentais para consolidar Gramado como um polo turístico e cultural da região.
+          </p>
+          <p>
+            A herança cultural se manifesta nas construções em estilo enxaimel, nas festas tradicionais e na gastronomia rica e diversificada.
+          </p>
+        </div>
+        <img
+          src="https://th.bing.com/th/id/OIP.9iW_4XrsXhMe4jKIaU-FBAHaEK?r=0&rs=1&pid=ImgDetMain"
+          alt="Casa enxaimel típica de Gramado"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section id="technology">
+      <h2>Tecnologia em Gramado</h2>
+      <div class="content-grid">
+        <img
+          src="https://tibahia.com/wp-content/uploads/2021/12/sebrae-inovacao-startups.jpg"
+          alt="Inovação e startups"
+          loading="lazy"
+        />
+        <div class="text-block">
+          <p>
+            Nos últimos anos, Gramado tem investido em tecnologia e inovação, promovendo eventos e espaços voltados para startups e empreendedorismo digital. A cidade busca aliar seu forte desenvolvimento turístico à modernização e transformação digital para manter-se competitiva.
+          </p>
+          <p>
+            Espaços de coworking e iniciativas locais apoiam o crescimento do setor tecnológico, atraindo jovens profissionais e investidores.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Gramado - Informações Turísticas. Desenvolvido com carinho.</p>
+  </footer>
+</body>
+</html>
+
+```
+
